@@ -4,3 +4,5 @@
 2. **Logs** — open the failed job and read its logs.
 3. **Re-run failed jobs** — re-run only the failed jobs of the run.
 4. **Branch sync** — update the pull request branch with the latest base-branch changes.
+
+Stage 2: failure logs captured
