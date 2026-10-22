@@ -1,0 +1,24 @@
+name: Runbook Drill CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Build
+        run: echo "runbook drill build ok"
+
+  failing-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Intentional failure
+        run: |
+          echo "intentional drill failure"
+          exit 1
